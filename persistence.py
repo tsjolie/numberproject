@@ -8,6 +8,7 @@ def generate():
     j = 1
     magicnumber = 0
     x = 277777788888899
+    #x = 210
     cbn = math.factorial(15)
     nmlst1 = permutations(str(x))
     for i in nmlst1:
@@ -16,8 +17,8 @@ def generate():
         if factor(lst)[-1] == 1: magicnumber = lst
 	#nmlst2.append(lst)
         j += 1
-        print("%.100f " % (j / cbn))
-        if magicnumber != 0: print(magicnumber)
+        print("%2.10f " % (j / 100))
+        if magicnumber != 0: print(factor(magicnumber), magicnumber)
 
 def persistence(number, count=0):
     # recursion base case - exit once the number is less than 10
