@@ -7,17 +7,18 @@ def generate():
     nmlst2 = []
     j = 1
     magicnumber = 0
+    answers=[]
     x = 277777788888899
     #x = 210
     cbn = math.factorial(15)
     nmlst1 = permutations(str(x))
     for i in nmlst1:
 	lst = convert(i)
-	#print(lst)
+	print(lst)
         if factor(lst)[-1] == 1: magicnumber = lst
 	#nmlst2.append(lst)
         j += 1
-        print("%2.10f " % (j / 100))
+        print("%2.10f " % (j / cbn))
         if magicnumber != 0: print(factor(magicnumber), magicnumber)
 
 def persistence(number, count=0):
