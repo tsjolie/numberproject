@@ -20,6 +20,7 @@ def generate():
         j += 1
         print("%2.10f " % (j / cbn))
         if magicnumber != 0: print(factor(magicnumber), magicnumber)
+        if magicnumber != 0: print("WE FOUND IT!!!!!!!!!!!!!!!!!!!!!!(lol you wish)"
 
 def persistence(number, count=0):
     # recursion base case - exit once the number is less than 10
